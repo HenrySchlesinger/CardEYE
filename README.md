@@ -309,17 +309,6 @@ The underlying YOLOv8 architecture from Ultralytics is licensed under AGPL-3.0. 
 
 ---
 
-## 🤝 Contributing
-
-Contributions are welcome! Here's how you can help:
-
-1. **Report Issues** — Found a bug or edge case? Open an issue!
-2. **Improve Documentation** — Help make CardEYE more accessible
-3. **Train Better Models** — Different deck styles, lighting conditions, or card sizes
-4. **Share Use Cases** — Built something cool? Let us know!
-
----
-
 ## 📬 Contact
 
 - **Author**: Henry Schlesinger
