@@ -27,7 +27,7 @@
 
 ## 🎯 Overview
 
-**CardEYE** is a production-ready AI model for detecting all 52 playing cards in real-time. Trained on NVIDIA A100 hardware with 1280×1280 resolution imagery, CardEYE achieves **99.5% mAP50** accuracy—making it the most accurate open-source playing card detection model available.
+**CardEYE** is a production-ready AI model for detecting all 52 playing cards in real-time. Trained on NVIDIA A100 hardware with 1280×640 resolution imagery, CardEYE achieves **99.5% mAP50** accuracy—making it the most accurate open-source playing card detection model available.
 
 ### Use Cases
 - 🎰 **Live Poker Broadcasting** — Real-time card overlays for Twitch/YouTube streams
@@ -99,8 +99,8 @@ CardEYE was trained to maximize accuracy for broadcast-quality detection, where 
 
 | Platform | Resolution | Speed | Notes |
 |----------|------------|-------|-------|
-| NVIDIA A100 | 1280×1280 | ~8ms | Training hardware |
-| NVIDIA RTX 4090 | 1280×1280 | ~12ms | Consumer flagship |
+| NVIDIA A100 | 1280×640 | ~8ms | Training hardware |
+| NVIDIA RTX 4090 | 1280×640 | ~12ms | Consumer flagship |
 | Apple M4 Max | 1920×1080 | ~15ms | CoreML optimized |
 | Apple M2 Pro | 1920×1080 | ~25ms | CoreML |
 
@@ -125,7 +125,7 @@ CardEYE was trained from scratch using the Ultralytics YOLOv8x architecture on h
 | Parameter | Value |
 |-----------|-------|
 | **Base Model** | YOLOv8x (68.2M parameters) |
-| **Image Size** | 1280×1280 |
+| **Image Size** | 1280×640 |
 | **Batch Size** | 8 |
 | **Epochs** | 300 (converged at ~69) |
 | **Early Stopping** | 50 epochs patience |
