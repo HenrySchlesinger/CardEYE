@@ -101,8 +101,8 @@ CardEYE was trained to maximize accuracy for broadcast-quality detection, where 
 |----------|------------|-------|-------|
 | NVIDIA A100 | 1280×640 | ~8ms | Training hardware |
 | NVIDIA RTX 4090 | 1280×640 | ~12ms | Consumer flagship |
-| Apple M4 Max | 1920×1080 | ~15ms | CoreML optimized |
-| Apple M2 Pro | 1920×1080 | ~25ms | CoreML |
+| Apple M4 Max | 1280×640 | ~15ms | CoreML optimized |
+| Apple M2 Pro | 1280×640 | ~25ms | CoreML |
 
 ---
 
@@ -229,7 +229,7 @@ from ultralytics import YOLO
 
 # Export with NMS baked in
 model = YOLO("models/cardeye.pt")
-model.export(format="coreml", imgsz=1920, nms=True, half=False)
+model.export(format="coreml", imgsz=[640, 1280], nms=True, half=False)
 ```
 
 ### Swift/Xcode Integration
